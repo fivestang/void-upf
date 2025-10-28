@@ -149,12 +149,12 @@ print_line() {
 
   if $COLOR_OUTPUT; then
     if $is_orphan; then
-      printf "%b%-${max_pkg_len}s%b %s\n" "$ORPHAN_COLOR" "$pkg:" "$COLOR_RESET" "$maint"
+      printf "%b%-${max_pkg_len}s%b %s\n" "$ORPHAN_COLOR" "$pkg" "$COLOR_RESET" "$maint"
     else
-      printf "%b%-${max_pkg_len}s%b %s\n" "$MAINTAINED_COLOR" "$pkg:" "$COLOR_RESET" "$maint"
+      printf "%b%-${max_pkg_len}s%b %s\n" "$MAINTAINED_COLOR" "$pkg" "$COLOR_RESET" "$maint"
     fi
   else
-    printf "%-${max_pkg_len}s %s\n" "$pkg:" "$maint"
+    printf "%-${max_pkg_len}s %s\n" "$pkg" "$maint"
   fi
 }
 
